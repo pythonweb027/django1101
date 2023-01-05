@@ -1,0 +1,31 @@
+  File "C:\Users\1101_python\Desktop\django_sns\sns\forms.py", line 25, in <module>
+    class GoodForm(forms.ModelForm):
+  File "C:\Users\1101_python\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\models.py", line 267, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (message) specified for Group
+
+AttributeError at /sns/
+'int' object has no attribute 'get_page'
+Request Method:	GET
+Request URL:	http://127.0.0.1:8000/sns/
+Django Version:	3.0.4
+Exception Type:	AttributeError
+Exception Value:	
+'int' object has no attribute 'get_page'
+Exception Location:	C:\Users\1101_python\Desktop\django_sns\sns\views.py in index, line 53
+Python Executable:	C:\Users\1101_python\AppData\Local\Programs\Python\Python311\python.exe
+Python Version:	3.11.0
+Python Path:	
+['C:\\Users\\1101_python\\Desktop\\django_sns',
+ 'C:\\Users\\1101_python\\AppData\\Local\\Programs\\Python\\Python311\\python311.zip',
+ 'C:\\Users\\1101_python\\AppData\\Local\\Programs\\Python\\Python311\\Lib',
+ 'C:\\Users\\1101_python\\AppData\\Local\\Programs\\Python\\Python311\\DLLs',
+ 'C:\\Users\\1101_python\\AppData\\Local\\Programs\\Python\\Python311',
+ 'C:\\Users\\1101_python\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages']
+Server time:	金, 23 12月 2022 14:23:07 +0900
+
+  File "C:\Users\1101_python\Desktop\django_sns\sns\views.py", line 122, in groups
+    friendsform = FriendForm(request.user, friends=friends, vals=[])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModelForm.__init__() got an unexpected keyword argument 'friends'
+
